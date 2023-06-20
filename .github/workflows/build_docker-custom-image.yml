@@ -1,7 +1,11 @@
-name: Build and push image to ECR
+name: build_docker-custom-image
 
-
-on: push
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - usr/src/**
   
   
 jobs:
